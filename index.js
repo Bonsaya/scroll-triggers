@@ -158,7 +158,7 @@ class ScrollTrigger {
   outOfView() {
     const { className, outOfView } = this.options;
     if (className && this.el.classList) {
-      removeClass(this.el, className);
+      //removeClass(this.el, className); Good bye. We only want to animate once, ty!
     }
 
     if (typeof outOfView === 'function') {
